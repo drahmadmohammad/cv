@@ -1,0 +1,133 @@
+:root {
+  --ink: #132238;
+  --ink-soft: #334e68;
+  --paper: #f7fbff;
+  --brand-1: #0b3c5d;
+  --brand-2: #f2a104;
+  --brand-3: #0f766e;
+  --card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+.hero-section {
+  background:
+    radial-gradient(circle at 15% 20%, rgb(242 161 4 / 28%) 0%, transparent 30%),
+    radial-gradient(circle at 80% 10%, rgb(15 118 110 / 32%) 0%, transparent 35%),
+    linear-gradient(135deg, #082136 0%, #0b3c5d 55%, #124f71 100%);
+}
+
+.eyebrow {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #ffd06b;
+}
+
+.profile-card {
+  background: rgb(255 255 255 / 10%);
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: 14px;
+  backdrop-filter: blur(4px);
+}
+
+.section-pad {
+  padding: 4.5rem 0;
+}
+
+.section-soft {
+  background: linear-gradient(180deg, #edf6ff 0%, #f9fcff 100%);
+}
+
+.section-title {
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+.chip-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-chip {
+  background: #e3f4f1;
+  border: 1px solid #b7ddd7;
+  color: #0f5f57;
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.timeline {
+  border-left: 3px solid #b5d0e8;
+  margin-left: 0.4rem;
+  padding-left: 1.25rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.4rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1.55rem;
+  top: 0.3rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--brand-2);
+  box-shadow: 0 0 0 3px #fff;
+}
+
+.cert-box {
+  height: 100%;
+  background: var(--card);
+  border: 1px solid #deebf7;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 24px rgb(18 79 113 / 7%);
+}
+
+.pub-list li {
+  margin-bottom: 0.6rem;
+}
+
+.contact-block {
+  background:
+    radial-gradient(circle at 70% 20%, rgb(255 255 255 / 10%) 0%, transparent 35%),
+    linear-gradient(120deg, #10334f 0%, #164f66 100%);
+}
+
+@media (max-width: 767.98px) {
+  .section-pad {
+    padding: 3.25rem 0;
+  }
+
+  .display-4 {
+    font-size: 2.1rem;
+  }
+}
